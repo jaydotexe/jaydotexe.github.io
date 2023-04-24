@@ -41,6 +41,8 @@ body {
     height: 169px;
     margin-right: 20px;
     overflow: hidden;
+    border: 1px solid #a9a9a9;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
 
 .image-text h2 {
