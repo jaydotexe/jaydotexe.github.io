@@ -9,15 +9,14 @@ body {
 
 /* Style the header */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 110px;
     color: #f7c57f;
     background-color: #111111;
-    border-bottom: 1px solid #1d1d1d;
-    margin-top: -20px; /* Remove default margin for header */
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 1;
 }
 
 /* Style the content */
@@ -28,7 +27,7 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6); /* Darker grey with 60% opacity */
-    margin: 90px 150px;
+    margin: 0 150px;
     border: 1px solid #1d1d1d;
 }
 
@@ -181,6 +180,9 @@ a:active {
     font-weight: bold;
     font-size: 16px;
     margin: 0 10px;
+    display: inline-block;
+    text-align: center;
+    min-width: 30px; /* adjust as needed */
 }
 
 #stat-allocation button {
@@ -202,3 +204,188 @@ a:active {
     background-color: #e0b364;
 }
 
+/* Optimized CSS for phones */
+@media only screen and (max-width: 767px) {
+    /* Style the content */
+    .content {
+        margin: 0 10px;
+    }
+
+    header {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    /* Style the project sections */
+    #class-selection,
+    #stat-allocation,
+    #equipment-and-spells,
+    #save-and-load {
+        margin: 0.5rem 0;
+        padding: 0.5rem;
+    }
+
+    /* Style the main */
+    main {
+        width: 100%;
+    }
+
+    /* Style the dropdown label */
+    #class-select-label {
+        font-size: 1rem;
+    }
+
+    /* Style the dropdown itself */
+    #class-select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Style the stat-allocation table */
+    #stat-allocation table {
+        width: 100%;
+    }
+
+    #stat-allocation th {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    #stat-allocation td {
+        font-size: 0.9rem;
+        padding: 5px;
+        height: auto;
+    }
+}
+
+/* Optimized CSS for tablets */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Style the content */
+    .content {
+        margin: 0 20px;
+    }
+
+    header {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    /* Style the project sections */
+    #class-selection,
+    #stat-allocation,
+    #equipment-and-spells,
+    #save-and-load {
+        margin: 1rem 0;
+        padding: 1rem;
+    }
+
+    /* Style the main */
+    main {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    /* Style the dropdown label */
+    #class-select-label {
+        font-size: 1.2rem;
+    }
+
+    /* Style the dropdown itself */
+    #class-select {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    /* Style the stat-allocation table */
+    #stat-allocation table {
+        width: 100%;
+    }
+
+    #stat-allocation th {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #stat-allocation td {
+        font-size: 0.9rem;
+        padding: 10px;
+        height: auto;
+    }
+}
+
+/* Optimized CSS for desktop */
+@media only screen and (min-width: 1200px) {
+    /* Style the content */
+    .content {
+        margin: 0 40px;
+    }
+
+    header {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    footer {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+
+    /* Style the project sections */
+    #class-selection,
+    #stat-allocation,
+    #equipment-and-spells,
+    #save-and-load {
+        padding: 2rem;
+    }
+
+
+    #class-selection {
+        padding: 1rem 2rem 0;
+    }
+
+    /* Style the main */
+    main {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Style the dropdown label */
+    #class-select-label {
+        font-size: 1.4rem;
+    }
+
+    /* Style the dropdown itself */
+    #class-select {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    /* Style the stat-allocation table */
+    #stat-allocation table {
+        width: 100%;
+    }
+
+    #stat-allocation th {
+        font-size: 1.2rem;
+        padding: 20px;
+    }
+
+    #stat-allocation td {
+        font-size: 1rem;
+        padding: 20px;
+        height: auto;
+    }
+}
