@@ -1,0 +1,162 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1530267795547-3b3c3b3ae8f3');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.card {
+    background-image: url('https://www.transparenttextures.com/patterns/black-paper.png');
+    background-color: #F0EAD6;
+    background-blend-mode: overlay;
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    height: 526px; /* Erhöhe die Höhe der Karte um 20px, um das h3-Element mit hinein zu bekommen */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #5b9bd5; /* standardmäßige Farbe des gender-male SVG */
+    margin-top: 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    border: none;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Ergänze die folgenden beiden Styles, um das h3-Element leicht versetzt unter dem h2-Element anzuzeigen */
+#dino-species {
+    margin-top: -20px;
+    font-family: "Roboto", sans-serif;
+}
+
+.card .img-container {
+    position: relative;
+    width: 100%;
+    height: 56.25%;
+    overflow: hidden;
+    border: 1px solid #2d2d2d;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.card .level {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card table {
+    width: 100%;
+}
+
+.card td {
+    padding: 5px;
+    border-bottom: 1px solid black;
+}
+
+.card td:first-child {
+    font-weight: bold;
+    width: 50%;
+}
+
+.card td:last-child {
+    text-align: right;
+    font-weight: bold;
+    width: 50%;
+}
+
+#file-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 322px;
+    height: 22px;
+    margin: 10px auto;
+}
+
+#fileInput {
+    flex-grow: 1;
+    margin-right: 10px;
+    height: inherit;
+}
+
+#file-upload button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    height: inherit;
+}
+
+#file-upload button:hover {
+    background-color: #3e8e41;
+}
+
+#gender-male {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+}
+
+#gender-female {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 22px;
+    height: 22px;
+    padding: 5px;
+}
+
+#color-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    width: 100%;
+}
+
+h4 {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.color-box {
+    width: calc((100% - 10px) / 6);
+    height: 8px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background-color: white;
+    border: 1px solid black;
+}

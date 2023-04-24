@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ark Dino Viewer</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="card">
+    <h2 id="dino-name">Name des Dinos</h2>
+    <h3 id="dino-species">(Species)</h3>
+    <div class="img-container">
+        <img id="dino-image"
+             src="https://static.wikia.nocookie.net/arksurvivalevolved_gamepedia/images/4/42/Dossier_Rex.png/revision/latest/scale-to-width-down/1920?cb=20181021235946"
+             alt="Bild des Dinos">
+        <div id="dino-level" class="level">Lv. 15</div>
+        <div id="gender-male">
+            <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#007bff">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -2079.000000)" fill="#5b9bd5">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M11,1937.005 C8.243,1937.005 6,1934.762 6,1932.005 C6,1929.248 8.243,1927.005 11,1927.005 C13.757,1927.005 16,1929.248 16,1932.005 C16,1934.762 13.757,1937.005 11,1937.005 L11,1937.005 Z M16,1919 L16,1921 L20.586,1921 L15.186,1926.402 C14.018,1925.527 12.572,1925.004 11,1925.004 C7.134,1925.004 4,1928.138 4,1932.004 C4,1935.87 7.134,1939.005 11,1939.005 C14.866,1939.005 18,1935.871 18,1932.005 C18,1930.433 17.475,1928.987 16.601,1927.818 L22,1922.419 L22,1927 L24,1927 L24,1919 L16,1919 Z"
+                                      id="male-[#1364]"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+        <div id="gender-female">
+            <svg viewBox="-3 0 20 20" xmlns="http://www.w3.org/2000/svg" fill="#000000" stroke="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-103.000000, -2079.000000)" fill="#f5b0cb">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M54.010058,1930.97067 C52.6753909,1930.97067 51.421643,1930.45194 50.4775859,1929.51025 C47.3327267,1926.36895 49.5904718,1920.99511 54.010058,1920.99511 C58.4266471,1920.99511 60.6903863,1926.36595 57.5425301,1929.51025 C56.5984729,1930.45194 55.344725,1930.97067 54.010058,1930.97067 M58.9411333,1930.92079 C63.3617184,1926.50661 60.1768991,1919 54.007061,1919 C47.8512088,1919 44.6294265,1926.50661 49.0510106,1930.92079 C50.1609021,1932.02908 51.9840813,1932.67949 52.9830836,1932.88598 L52.9830836,1935.00978 L49.9860767,1935.00978 L49.9860767,1937.00489 L52.9830836,1937.00489 L52.9830836,1939 L54.9810882,1939 L54.9810882,1937.00489 L57.9780951,1937.00489 L57.9780951,1935.00978 L54.9810882,1935.00978 L54.9810882,1932.88598 C56.9790928,1932.67949 57.8302427,1932.02908 58.9411333,1930.92079"
+                                      id="female-[#1363]"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </div>
+    <h4>Color Areas</h4>
+    <div id="color-container">
+        <div class="color-box" id="color-one"></div>
+        <div class="color-box" id="color-two"></div>
+        <div class="color-box" id="color-three"></div>
+        <div class="color-box" id="color-four"></div>
+        <div class="color-box" id="color-five"></div>
+        <div class="color-box" id="color-six"></div>
+    </div>
+    <table>
+        <tr>
+            <td>Health:</td>
+            <td id="dino-health">100</td>
+        </tr>
+        <tr>
+            <td>Stamina:</td>
+            <td id="dino-stamina">100</td>
+        </tr>
+        <tr>
+            <td>Melee Damage:</td>
+            <td id="dino-melee-damage">100%</td>
+        </tr>
+        <tr>
+            <td>Food:</td>
+            <td id="dino-food">100</td>
+        </tr>
+        <tr>
+            <td>Weight:</td>
+            <td id="dino-weight">100</td>
+        </tr>
+        <tr>
+            <td>Oxygen:</td>
+            <td id="dino-oxygen">100</td>
+        </tr>
+        <tr>
+            <td>Movement Speed:</td>
+            <td id="dino-movement-speed">100%</td>
+        </tr>
+    </table>
+</div>
+<div id="file-upload">
+    <input type="file" id="fileInput" accept=".ini">
+    <button type="button" onclick="processFile()">Upload</button>
+</div>
+
+<!-- Einbindung des JavaScript-Codes -->
+<script src="script.js"></script>
+</body>
+
+</html>
