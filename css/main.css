@@ -89,12 +89,14 @@ body {
 
 .disclaimer a {
     color: #4a4a4a;
-    text-decoration: underline;
+    text-decoration: none;
     font-weight: bold;
 }
 
 .disclaimer a:hover {
     color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .disclaimer p:first-of-type {
@@ -103,9 +105,4 @@ body {
 
 .disclaimer span {
     color: #007bff;
-}
-
-.disclaimer span:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
