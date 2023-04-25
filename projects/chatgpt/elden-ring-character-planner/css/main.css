@@ -206,9 +206,6 @@ a:active {
 
 /* Optimized CSS for phones */
 @media only screen and (max-width: 767px) {
-    body {
-        background-attachment: scroll;
-    }
     /* Style the content */
     .content {
         margin: 0 10px;
